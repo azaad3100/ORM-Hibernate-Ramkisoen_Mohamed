@@ -2,6 +2,8 @@ package entity;
 
 import jakarta.persistence.*;
 
+import java.util.Set;
+
 @Entity
 public class Customer {
     @Id

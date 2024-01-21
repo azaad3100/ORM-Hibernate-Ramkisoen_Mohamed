@@ -5,6 +5,7 @@ import service.CustomersService;
 import service.EmployeeService;
 import service.RoleService;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,8 +14,10 @@ public class Main {
         RoleService roleService = new RoleService();
         CustomersService customersService = new CustomersService();
 
+        //save role info
         Role saveRole = new Role();
         saveRole.setRole_name("Admin");
+
         Role roleDetail = roleService.createRole(saveRole);
 
         Employee saveEmployee = new Employee();
@@ -33,7 +36,11 @@ public class Main {
         saveCustomer.setNumber(99988);
         saveCustomer.setEmp_id(empDetail);
 
-        customersService.createCustomer(saveCustomer);
+        Customer cusDetail = customersService.createCustomer(saveCustomer);
+
+
+
+
 
 
 
