@@ -1,11 +1,7 @@
-import entity.Customer;
-import entity.Employee;
-import entity.Orders;
-import entity.Role;
-import service.CustomersService;
-import service.EmployeeService;
-import service.OrdersService;
-import service.RoleService;
+import entity.*;
+import service.*;
+
+import java.util.Set;
 
 
 public class Main {
@@ -39,20 +35,26 @@ public class Main {
         CustomersService customersService = new CustomersService();
         Customer cusDetail = customersService.createCustomer(saveCustomer);
 
+
+        Product saveProducts = new Product();
+        saveProducts.setProdQuantity(10);
+        saveProducts.setProdPrice(20.00);
+        saveProducts.setProdName("Battery");
+
         Orders saveOrder = new Orders();
         saveOrder.setDate("2000");
         saveOrder.setQuantity(100);
         saveOrder.setPrice_total(10.00);
         saveOrder.setCust_id(cusDetail);
+        saveOrder.getProducts().add(saveProducts);
+
+        saveProducts.getOrders().add(saveOrder);
+
+        ProductService productService = new ProductService();
+        productService.createProduct(saveProducts);
 
         OrdersService ordersService = new OrdersService();
-        ordersService.createOrders(saveOrder);
-
-
-
-
-
-
+        Orders orderDetail = ordersService.createOrders(saveOrder);
 
 
 

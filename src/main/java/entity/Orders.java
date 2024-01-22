@@ -2,6 +2,7 @@ package entity;
 
 import jakarta.persistence.*;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 @Entity
@@ -16,6 +17,9 @@ public class Orders {
     @ManyToOne
     @JoinColumn(name = "emp_id")
     private Customer customer_id;
+    @ManyToMany
+    private Set<Product> products = new HashSet<>();
+
 
     public Integer getQuantity() {
         return quantity;
@@ -47,5 +51,28 @@ public class Orders {
 
     public void setCust_id(Customer cust_id) {
         this.customer_id = cust_id;
+    }
+
+    public Long getOrder_id() {
+        return order_id;
+    }
+
+    public void setOrder_id(Long order_id) {
+        this.order_id = order_id;
+    }
+
+    public Customer getCustomer_id() {
+        return customer_id;
+    }
+
+    public void setCustomer_id(Customer customer_id) {
+        this.customer_id = customer_id;
+    }
+
+    public Set<Product> getProducts() {
+        return products;
+    }
+    public void setProducts(Set<Product> products) {
+        this.products = products;
     }
 }
