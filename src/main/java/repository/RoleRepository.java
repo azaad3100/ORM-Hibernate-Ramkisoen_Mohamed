@@ -13,7 +13,7 @@ public class RoleRepository {
 
     public Role createRole(Role role) {
         try {
-            entityManager.getTransaction().begin();
+            //entityManager.getTransaction().begin();
             entityManager.persist(role);
             entityManager.getTransaction().commit();
         } catch (Exception e) {

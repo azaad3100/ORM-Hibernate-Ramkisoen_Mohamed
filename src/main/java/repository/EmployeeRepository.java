@@ -16,7 +16,7 @@ public class EmployeeRepository {
 
     public Employee createEmployee(Employee employee){
         try {
-            entityManager.getTransaction().begin();
+            entityManager.getTransaction();
             entityManager.persist(employee);
             entityManager.getTransaction().commit();
         }

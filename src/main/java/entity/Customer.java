@@ -19,8 +19,13 @@ public class Customer {
     @OneToMany(mappedBy = "customer_id")
     private Set<Orders> orders;
 
+    public Long getId() {
+        return Id;
+    }
 
-
+    public void setId(Long id) {
+        Id = id;
+    }
 
     public String getfName() {
         return fName;
