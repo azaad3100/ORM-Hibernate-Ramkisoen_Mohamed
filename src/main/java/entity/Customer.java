@@ -8,13 +8,19 @@ import java.util.Set;
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long cusId;
+    private Long Id;
     private String fName;
     private String lName;
     private Integer number;
     @ManyToOne
     @JoinColumn(name = "emp_id")
     private Employee emp_id;
+
+    @OneToMany(mappedBy = "customer_id")
+    private Set<Orders> orders;
+
+
+
 
     public String getfName() {
         return fName;

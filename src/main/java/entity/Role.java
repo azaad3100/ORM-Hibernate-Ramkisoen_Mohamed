@@ -14,6 +14,8 @@ public class Role {
     @OneToMany(mappedBy = "role_id")
     private Set<Employee> employees;
 
+
+
     public String getRole_name() {
         return role_name;
     }
