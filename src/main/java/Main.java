@@ -1,7 +1,7 @@
 import entity.*;
 import service.*;
 
-import java.util.Set;
+
 
 
 public class Main {
@@ -54,16 +54,13 @@ public class Main {
         productService.createProduct(saveProducts);
 
         OrdersService ordersService = new OrdersService();
-        Orders orderDetail = ordersService.createOrders(saveOrder);
+        ordersService.createOrders(saveOrder);
 
 
 
 
 
-        /*List<Gebruiker> gebruikers = gebruikerService.getGebruikers();
-        gebruikers.forEach( gebruiker -> {
-            System.out.println("Voornaam = " + gebruiker.getVoornaam() + "Achternaam = " + gebruiker.getAchternaam());
-        });*/
+
 
 
 
