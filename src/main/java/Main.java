@@ -3,9 +3,6 @@ import entity.*;
 import jakarta.persistence.EntityManager;
 import service.*;
 
-
-
-
 public class Main {
 
 
