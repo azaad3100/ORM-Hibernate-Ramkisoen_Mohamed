@@ -13,8 +13,8 @@ public class reportService {
     public static void reportEmployees(){
 
         List<Employee> employeeList = entityManager.createQuery("SELECT u FROM Employee u", Employee.class).getResultList();
-        System.out.println("Employee Report:");
-        System.out.println("ID\tName\tLastname");
+//        System.out.println("Employee Report:");
+//        System.out.println("ID\tName\tLastname");
         for (Employee employee : employeeList) {
             System.out.println(employee.getEmp_id()+ "\t" + employee.getfName()+ "\t" + employee.getlName());
         }
