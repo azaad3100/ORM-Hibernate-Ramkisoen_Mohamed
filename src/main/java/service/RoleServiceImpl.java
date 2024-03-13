@@ -22,4 +22,9 @@ public class RoleServiceImpl implements RoleServiceInterface {
     public List<RoleDto> getAllRoles() {
         return roleMapper.toDtoList(roleRepository.getAllRoles());
     }
+
+    @Override
+    public RoleDto addRole(RoleDto roleDto) {
+        return roleMapper.toDto(roleRepository.addRole(roleMapper.toEntity(roleDto)));
+    }
 }

@@ -2,9 +2,7 @@ package controller;
 
 import dto.RoleDto;
 import entity.Role;
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import service.RoleService;
 import service.RoleServiceImpl;
@@ -34,6 +32,13 @@ public class InventoryController {
     @Produces(MediaType.APPLICATION_JSON)
     public List<RoleDto> getAllRoles() {
         return roleServiceInterface.getAllRoles();
+    }
+
+    @Path("/add")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public RoleDto add(RoleDto roleDto) { return roleServiceInterface.addRole(roleDto);
     }
 }
 
