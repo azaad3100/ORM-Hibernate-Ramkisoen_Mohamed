@@ -40,6 +40,13 @@ public class InventoryController {
     @Produces(MediaType.APPLICATION_JSON)
     public RoleDto add(RoleDto roleDto) { return roleServiceInterface.addRole(roleDto);
     }
+
+    @Path("/update")
+    @PUT
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public RoleDto update(RoleDto roleDto) { return roleServiceInterface.updateRole(roleDto);
+    }
 }
 
 

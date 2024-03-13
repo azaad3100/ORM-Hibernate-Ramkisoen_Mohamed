@@ -37,3 +37,11 @@
 0:0:0:0:0:0:0:1 - - [13/Mar/2024:02:47:41 -0300] "GET /favicon.ico HTTP/1.1" 404 683
 0:0:0:0:0:0:0:1 - - [13/Mar/2024:02:47:57 -0300] "POST /api/sales/inventory/add HTTP/1.1" 200 42
 0:0:0:0:0:0:0:1 - - [13/Mar/2024:02:48:00 -0300] "GET /api/sales/inventory/all HTTP/1.1" 200 347
+0:0:0:0:0:0:0:1 - - [13/Mar/2024:03:23:17 -0300] "GET /api/sales/inventory/all HTTP/1.1" 500 9989
+0:0:0:0:0:0:0:1 - - [13/Mar/2024:03:23:30 -0300] "GET /api/sales/inventory/all HTTP/1.1" 200 347
+0:0:0:0:0:0:0:1 - - [13/Mar/2024:03:23:31 -0300] "GET /api/sales/inventory/all HTTP/1.1" 200 347
+0:0:0:0:0:0:0:1 - - [13/Mar/2024:03:23:31 -0300] "GET /favicon.ico HTTP/1.1" 404 683
+0:0:0:0:0:0:0:1 - - [13/Mar/2024:03:23:37 -0300] "GET /api/sales/inventory/all HTTP/1.1" 200 347
+0:0:0:0:0:0:0:1 - - [13/Mar/2024:03:24:47 -0300] "PUT /api/sales/inventory/update/13 HTTP/1.1" 404 714
+0:0:0:0:0:0:0:1 - - [13/Mar/2024:03:25:06 -0300] "PUT /api/sales/inventory/update HTTP/1.1" 200 40
+0:0:0:0:0:0:0:1 - - [13/Mar/2024:03:25:24 -0300] "GET /api/sales/inventory/all HTTP/1.1" 200 347

@@ -27,4 +27,9 @@ public class RoleServiceImpl implements RoleServiceInterface {
     public RoleDto addRole(RoleDto roleDto) {
         return roleMapper.toDto(roleRepository.addRole(roleMapper.toEntity(roleDto)));
     }
+
+    @Override
+    public RoleDto updateRole(RoleDto roleDto) {
+        return roleMapper.toDto(roleRepository.updateRole(roleMapper.toEntity(roleDto)));
+    }
 }

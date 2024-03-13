@@ -38,4 +38,12 @@ public class RoleRepository {
         entityManager.getTransaction().commit();
         return role;
     }
+
+    public Role updateRole(Role role){
+        entityManager.getTransaction().begin();
+        entityManager.merge(role);
+        entityManager.getTransaction().commit();
+
+        return role;
+    }
 }
