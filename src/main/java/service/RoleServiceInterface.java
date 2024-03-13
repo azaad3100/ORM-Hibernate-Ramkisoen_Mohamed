@@ -11,4 +11,6 @@ public interface RoleServiceInterface {
     RoleDto addRole(RoleDto roleDto);
 
     RoleDto updateRole(RoleDto roleDto);
+
+    int deleteRole(Long roleID);
 }

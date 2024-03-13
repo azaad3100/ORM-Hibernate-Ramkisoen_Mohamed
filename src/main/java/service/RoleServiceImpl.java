@@ -32,4 +32,9 @@ public class RoleServiceImpl implements RoleServiceInterface {
     public RoleDto updateRole(RoleDto roleDto) {
         return roleMapper.toDto(roleRepository.updateRole(roleMapper.toEntity(roleDto)));
     }
+
+    @Override
+    public int deleteRole(Long roleID) {
+        return roleRepository.deleteRole(roleID);
+    }
 }

@@ -1,7 +1,9 @@
 package repository;
 
+import entity.Customer;
 import entity.Role;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.Query;
 import jakarta.persistence.TypedQuery;
 
 import java.util.List;
@@ -43,7 +45,16 @@ public class RoleRepository {
         entityManager.getTransaction().begin();
         entityManager.merge(role);
         entityManager.getTransaction().commit();
-
         return role;
+    }
+
+    public int deleteRole(Long roleID){
+        entityManager.getTransaction().begin();
+        Query query = entityManager.createQuery("delete from Role g WHERE g.role_id = :roleID");
+        query.setParameter("roleID", roleID);
+        int updatedRecords = query.executeUpdate();
+        entityManager.getTransaction().commit();
+        return updatedRecords;
+
     }
 }

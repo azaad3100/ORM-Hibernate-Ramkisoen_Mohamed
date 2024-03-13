@@ -4,6 +4,7 @@ import dto.RoleDto;
 import entity.Role;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
 import service.RoleService;
 import service.RoleServiceImpl;
 import service.RoleServiceInterface;
@@ -47,6 +48,15 @@ public class InventoryController {
     @Produces(MediaType.APPLICATION_JSON)
     public RoleDto update(RoleDto roleDto) { return roleServiceInterface.updateRole(roleDto);
     }
+
+    @Path("/remove/{roleID}")
+    @DELETE
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public int delete(@PathParam("roleID") Long roleID) {
+        return roleServiceInterface.deleteRole(roleID);
+    }
+
 }
 
 
