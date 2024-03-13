@@ -55,6 +55,5 @@ public class RoleRepository {
         int updatedRecords = query.executeUpdate();
         entityManager.getTransaction().commit();
         return updatedRecords;
-
     }
 }
