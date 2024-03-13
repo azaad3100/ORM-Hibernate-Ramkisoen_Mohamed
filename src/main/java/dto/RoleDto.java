@@ -1,18 +1,9 @@
-package entity;
+package dto;
 
-import jakarta.persistence.*;
+public class RoleDto {
 
-import java.util.Set;
-
-@Entity
-public class Role {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long role_id;
     private String role_name;
-    @OneToMany(mappedBy = "role_id")
-    private Set<Employee> employees;
 
     public Long getRole_id() {
         return role_id;
