@@ -1,0 +1,285 @@
+14-Mar-2024 00:02:41.824 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.18
+14-Mar-2024 00:02:41.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 5 2024 14:39:40 UTC
+14-Mar-2024 00:02:41.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.18.0
+14-Mar-2024 00:02:41.831 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+14-Mar-2024 00:02:41.831 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+14-Mar-2024 00:02:41.831 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-Mar-2024 00:02:41.831 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17
+14-Mar-2024 00:02:41.831 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.7+8-LTS-224
+14-Mar-2024 00:02:41.831 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+14-Mar-2024 00:02:41.832 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Azaad Ramkisoen\Desktop\School\UNASAT\Semester 5\ORM-Hibernate-Ramkisoen_Mohamed
+14-Mar-2024 00:02:41.832 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Dependencies\apache-tomcat-10.1.18
+14-Mar-2024 00:02:41.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+14-Mar-2024 00:02:41.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+14-Mar-2024 00:02:41.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+14-Mar-2024 00:02:41.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+14-Mar-2024 00:02:41.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-Mar-2024 00:02:41.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Dependencies\apache-tomcat-10.1.18
+14-Mar-2024 00:02:41.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Azaad Ramkisoen\Desktop\School\UNASAT\Semester 5\ORM-Hibernate-Ramkisoen_Mohamed
+14-Mar-2024 00:02:41.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Azaad Ramkisoen\Desktop\School\UNASAT\Semester 5\ORM-Hibernate-Ramkisoen_Mohamed\temp
+14-Mar-2024 00:02:41.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Azaad Ramkisoen\Desktop\School\UNASAT\Semester 5\ORM-Hibernate-Ramkisoen_Mohamed\conf\logging.properties
+14-Mar-2024 00:02:41.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Mar-2024 00:02:41.849 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\lib\idea_rt.jar=63959:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\bin
+14-Mar-2024 00:02:41.849 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+14-Mar-2024 00:02:41.852 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+14-Mar-2024 00:02:41.859 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+14-Mar-2024 00:02:42.378 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+14-Mar-2024 00:02:42.403 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [879] milliseconds
+14-Mar-2024 00:02:42.462 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+14-Mar-2024 00:02:42.463 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.18]
+14-Mar-2024 00:02:42.482 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\Azaad Ramkisoen\Desktop\School\UNASAT\Semester 5\ORM-Hibernate-Ramkisoen_Mohamed\conf\Catalina\localhost\api.xml]
+14-Mar-2024 00:02:46.223 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Mar-2024 00:02:47.296 INFO [main] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [name: unasat_persistence]
+14-Mar-2024 00:02:47.517 INFO [main] org.hibernate.Version.logVersion HHH000412: Hibernate ORM core version 6.0.2.Final
+14-Mar-2024 00:02:48.016 WARN [main] org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.lambda$normalizeConnectionAccessUserAndPass$5 HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.user], use [jakarta.persistence.jdbc.user] instead
+14-Mar-2024 00:02:48.017 WARN [main] org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.lambda$normalizeConnectionAccessUserAndPass$11 HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.password], use [jakarta.persistence.jdbc.password] instead
+14-Mar-2024 00:02:48.017 WARN [main] org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.normalizeDataAccess HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.url], use [jakarta.persistence.jdbc.url] instead
+14-Mar-2024 00:02:48.017 WARN [main] org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.normalizeDataAccess HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.driver], use [jakarta.persistence.jdbc.driver] instead
+14-Mar-2024 00:02:48.822 WARN [main] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH10001002: Using built-in connection pool (not intended for production use)
+14-Mar-2024 00:02:48.833 INFO [main] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+14-Mar-2024 00:02:48.833 INFO [main] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/db_InventorySystem]
+14-Mar-2024 00:02:48.833 INFO [main] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001001: Connection properties: {password=****, user=root}
+14-Mar-2024 00:02:48.833 INFO [main] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001003: Autocommit mode: false
+14-Mar-2024 00:02:48.844 INFO [main] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> HHH10001115: Connection pool size: 20 (min=1)
+14-Mar-2024 00:02:49.476 INFO [main] org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14-Mar-2024 00:02:51.052 INFO [main] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 8.0.1.Final
+14-Mar-2024 00:02:53.533 INFO [main] org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d800902] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-Mar-2024 00:02:53.688 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-Mar-2024 00:02:55.136 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Azaad Ramkisoen\Desktop\School\UNASAT\Semester 5\ORM-Hibernate-Ramkisoen_Mohamed\conf\Catalina\localhost\api.xml] has finished in [12,653] ms
+14-Mar-2024 00:02:55.140 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+14-Mar-2024 00:02:55.165 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [12761] milliseconds
+14-Mar-2024 06:26:30.547 WARNING [http-nio-8080-exec-10] org.glassfish.jersey.server.ServerRuntime$Responder.process An exception mapping did not successfully produce and processed a response. Logging the exception propagated to the default exception mapper.
+	java.lang.NoClassDefFoundError: com/fasterxml/jackson/module/jaxb/JaxbAnnotationIntrospector
+		at org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JsonMapperConfigurator._resolveIntrospector(JsonMapperConfigurator.java:111)
+		at org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JsonMapperConfigurator._resolveIntrospectors(JsonMapperConfigurator.java:86)
+		at org.glassfish.jersey.jackson.internal.jackson.jaxrs.cfg.MapperConfiguratorBase._setAnnotations(MapperConfiguratorBase.java:123)
+		at org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JsonMapperConfigurator.getDefaultMapper(JsonMapperConfigurator.java:47)
+		at org.glassfish.jersey.jackson.internal.jackson.jaxrs.base.ProviderBase.locateMapper(ProviderBase.java:948)
+		at org.glassfish.jersey.jackson.internal.jackson.jaxrs.base.ProviderBase._endpointForWriting(ProviderBase.java:713)
+		at org.glassfish.jersey.jackson.internal.jackson.jaxrs.base.ProviderBase.writeTo(ProviderBase.java:585)
+		at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.invokeWriteTo(WriterInterceptorExecutor.java:242)
+		at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo(WriterInterceptorExecutor.java:227)
+		at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+		at org.glassfish.jersey.server.internal.JsonWithPaddingInterceptor.aroundWriteTo(JsonWithPaddingInterceptor.java:85)
+		at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+		at org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundWriteTo(MappableExceptionWrapperInterceptor.java:61)
+		at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+		at org.glassfish.jersey.message.internal.MessageBodyFactory.writeTo(MessageBodyFactory.java:1116)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse(ServerRuntime.java:677)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.processResponse(ServerRuntime.java:385)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:375)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:264)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+		at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+		at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+		at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+		at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+		at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.module.jaxb.JaxbAnnotationIntrospector
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1353)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+		... 54 more
+14-Mar-2024 06:26:30.552 SEVERE [http-nio-8080-exec-10] org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse Error while closing the output stream in order to commit response.
+	org.glassfish.jersey.server.ContainerException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: com/fasterxml/jackson/module/jaxb/JaxbAnnotationIntrospector
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.getResponseContext(ResponseWriter.java:278)
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.writeResponseStatusAndHeaders(ResponseWriter.java:128)
+		at org.glassfish.jersey.server.ServerRuntime$Responder$1.getOutputStream(ServerRuntime.java:667)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:171)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.flushBuffer(CommittingOutputStream.java:276)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.commit(CommittingOutputStream.java:232)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.close(CommittingOutputStream.java:247)
+		at org.glassfish.jersey.message.internal.OutboundMessageContext.close(OutboundMessageContext.java:842)
+		at org.glassfish.jersey.server.ContainerResponse.close(ContainerResponse.java:389)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse(ServerRuntime.java:749)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.processResponse(ServerRuntime.java:385)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.processResponseWithDefaultExceptionMapper(ServerRuntime.java:633)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:458)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:269)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+		at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+		at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+		at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+		at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+		at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: com/fasterxml/jackson/module/jaxb/JaxbAnnotationIntrospector
+		at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+		at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.getResponseContext(ResponseWriter.java:276)
+		... 48 more
+	Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/module/jaxb/JaxbAnnotationIntrospector
+		at org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JsonMapperConfigurator._resolveIntrospector(JsonMapperConfigurator.java:111)
+		at org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JsonMapperConfigurator._resolveIntrospectors(JsonMapperConfigurator.java:86)
+		at org.glassfish.jersey.jackson.internal.jackson.jaxrs.cfg.MapperConfiguratorBase._setAnnotations(MapperConfiguratorBase.java:123)
+		at org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JsonMapperConfigurator.getDefaultMapper(JsonMapperConfigurator.java:47)
+		at org.glassfish.jersey.jackson.internal.jackson.jaxrs.base.ProviderBase.locateMapper(ProviderBase.java:948)
+		at org.glassfish.jersey.jackson.internal.jackson.jaxrs.base.ProviderBase._endpointForWriting(ProviderBase.java:713)
+		at org.glassfish.jersey.jackson.internal.jackson.jaxrs.base.ProviderBase.writeTo(ProviderBase.java:585)
+		at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.invokeWriteTo(WriterInterceptorExecutor.java:242)
+		at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo(WriterInterceptorExecutor.java:227)
+		at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+		at org.glassfish.jersey.server.internal.JsonWithPaddingInterceptor.aroundWriteTo(JsonWithPaddingInterceptor.java:85)
+		at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+		at org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundWriteTo(MappableExceptionWrapperInterceptor.java:61)
+		at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+		at org.glassfish.jersey.message.internal.MessageBodyFactory.writeTo(MessageBodyFactory.java:1116)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse(ServerRuntime.java:677)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.processResponse(ServerRuntime.java:385)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:375)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:264)
+		... 35 more
+	Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.module.jaxb.JaxbAnnotationIntrospector
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1353)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+		... 54 more
+14-Mar-2024 06:26:42.109 INFO [Thread-2] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+14-Mar-2024 06:26:42.122 INFO [Thread-2] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+14-Mar-2024 06:26:42.158 WARNING [Thread-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [api] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+14-Mar-2024 06:26:42.160 WARNING [Thread-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [api] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/java.lang.Object.wait(Native Method)
+ java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+14-Mar-2024 06:26:42.160 WARNING [Thread-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [api] appears to have started a thread named [Hibernate Connection Pool Validation Thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+14-Mar-2024 06:26:42.173 INFO [Thread-2] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+14-Mar-2024 06:26:42.185 INFO [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+14-Mar-2024 06:26:48.486 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.18
+14-Mar-2024 06:26:48.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 5 2024 14:39:40 UTC
+14-Mar-2024 06:26:48.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.18.0
+14-Mar-2024 06:26:48.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+14-Mar-2024 06:26:48.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+14-Mar-2024 06:26:48.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-Mar-2024 06:26:48.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17
+14-Mar-2024 06:26:48.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.7+8-LTS-224
+14-Mar-2024 06:26:48.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+14-Mar-2024 06:26:48.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Azaad Ramkisoen\Desktop\School\UNASAT\Semester 5\ORM-Hibernate-Ramkisoen_Mohamed
+14-Mar-2024 06:26:48.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Dependencies\apache-tomcat-10.1.18
+14-Mar-2024 06:26:48.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+14-Mar-2024 06:26:48.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+14-Mar-2024 06:26:48.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+14-Mar-2024 06:26:48.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+14-Mar-2024 06:26:48.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-Mar-2024 06:26:48.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Dependencies\apache-tomcat-10.1.18
+14-Mar-2024 06:26:48.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Azaad Ramkisoen\Desktop\School\UNASAT\Semester 5\ORM-Hibernate-Ramkisoen_Mohamed
+14-Mar-2024 06:26:48.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Azaad Ramkisoen\Desktop\School\UNASAT\Semester 5\ORM-Hibernate-Ramkisoen_Mohamed\temp
+14-Mar-2024 06:26:48.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Azaad Ramkisoen\Desktop\School\UNASAT\Semester 5\ORM-Hibernate-Ramkisoen_Mohamed\conf\logging.properties
+14-Mar-2024 06:26:48.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Mar-2024 06:26:48.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\lib\idea_rt.jar=57840:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\bin
+14-Mar-2024 06:26:48.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+14-Mar-2024 06:26:48.512 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+14-Mar-2024 06:26:48.519 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+14-Mar-2024 06:26:48.983 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+14-Mar-2024 06:26:49.031 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [831] milliseconds
+14-Mar-2024 06:26:49.099 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+14-Mar-2024 06:26:49.099 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.18]
+14-Mar-2024 06:26:49.117 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\Azaad Ramkisoen\Desktop\School\UNASAT\Semester 5\ORM-Hibernate-Ramkisoen_Mohamed\conf\Catalina\localhost\api.xml]
+14-Mar-2024 06:26:53.038 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Mar-2024 06:26:54.174 INFO [main] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [name: unasat_persistence]
+14-Mar-2024 06:26:54.390 INFO [main] org.hibernate.Version.logVersion HHH000412: Hibernate ORM core version 6.0.2.Final
+14-Mar-2024 06:26:54.888 WARN [main] org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.lambda$normalizeConnectionAccessUserAndPass$5 HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.user], use [jakarta.persistence.jdbc.user] instead
+14-Mar-2024 06:26:54.889 WARN [main] org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.lambda$normalizeConnectionAccessUserAndPass$11 HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.password], use [jakarta.persistence.jdbc.password] instead
+14-Mar-2024 06:26:54.890 WARN [main] org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.normalizeDataAccess HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.url], use [jakarta.persistence.jdbc.url] instead
+14-Mar-2024 06:26:54.890 WARN [main] org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.normalizeDataAccess HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.driver], use [jakarta.persistence.jdbc.driver] instead
+14-Mar-2024 06:26:55.668 WARN [main] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH10001002: Using built-in connection pool (not intended for production use)
+14-Mar-2024 06:26:55.679 INFO [main] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+14-Mar-2024 06:26:55.680 INFO [main] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/db_InventorySystem]
+14-Mar-2024 06:26:55.680 INFO [main] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001001: Connection properties: {password=****, user=root}
+14-Mar-2024 06:26:55.680 INFO [main] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001003: Autocommit mode: false
+14-Mar-2024 06:26:55.689 INFO [main] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> HHH10001115: Connection pool size: 20 (min=1)
+14-Mar-2024 06:26:56.311 INFO [main] org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14-Mar-2024 06:26:57.916 INFO [main] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 8.0.1.Final
+14-Mar-2024 06:27:00.460 INFO [main] org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@47fb038d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-Mar-2024 06:27:00.597 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-Mar-2024 06:27:02.077 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Azaad Ramkisoen\Desktop\School\UNASAT\Semester 5\ORM-Hibernate-Ramkisoen_Mohamed\conf\Catalina\localhost\api.xml] has finished in [12,959] ms
+14-Mar-2024 06:27:02.080 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+14-Mar-2024 06:27:02.106 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [13074] milliseconds
+14-Mar-2024 16:06:03.139 INFO [Thread-2] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+14-Mar-2024 16:06:03.153 INFO [Thread-2] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+14-Mar-2024 16:06:03.204 WARNING [Thread-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [api] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+14-Mar-2024 16:06:03.206 WARNING [Thread-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [api] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/java.lang.Object.wait(Native Method)
+ java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+14-Mar-2024 16:06:03.206 WARNING [Thread-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [api] appears to have started a thread named [Hibernate Connection Pool Validation Thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+14-Mar-2024 16:06:03.218 INFO [Thread-2] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+14-Mar-2024 16:06:03.230 INFO [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
