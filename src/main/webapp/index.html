@@ -1,6 +1,160 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Data</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
 <body>
-<h2>Hello HTML World!</h2>
-<button><a href="https://www.example.com">Redirect to report Page</a></button>
+    <div class="container mt-5">
+        <h1>Role Data</h1><div class="3"></div>
+        <button class="btn btn-success" data-toggle="modal" data-target="#addRoleModal">Add New Role</button>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Role ID</th>
+                    <th>Role Name</th>
+                    <th>Role Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="roleTableBody"></tbody>
+        </table>
+        <!-- Add button to open "Add Role" modal -->
+    </div>
+
+    <!-- Edit Role Modal -->
+    <div class="modal fade" id="editRoleModal" tabindex="-1" role="dialog" aria-labelledby="editRoleModalLabel" aria-hidden="true">
+        <!-- ... (existing modal content) ... -->
+    </div>
+
+    <!-- Add Role Modal -->
+    <div class="modal fade" id="addRoleModal" tabindex="-1" role="dialog" aria-labelledby="addRoleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addRoleModalLabel">Add Role</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add your form fields for adding a new role here -->
+                    <label for="newRoleName">Role Name:</label>
+                    <input type="text" id="newRoleName" class="form-control">
+                    <label for="newRoleDescription">Role Description:</label>
+                    <textarea id="newRoleDescription" class="form-control"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="addNewRole()">Add Role</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Fetch data from your API (replace with your actual API endpoint)
+        fetch('http://localhost:8080/api/sales/inventory/all')
+            .then(response => response.json())
+            .then(data => {
+                const roleTableBody = document.getElementById('roleTableBody');
+                data.forEach(role => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${role.role_id}</td>
+                        <td>${role.role_name}</td>
+                        <td>${role.role_description}</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm" onclick="editRole(${role.role_id})">Edit</button>
+                            <button class="btn btn-danger btn-sm" onclick="deleteRole(${role.role_id})">Delete</button>
+                        </td>
+                    `;
+                    roleTableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
+
+
+
+        // Example edit and delete functions (replace with your actual logic)
+        function editRole(roleId) {
+            // Implement your edit logic here
+            console.log(`Editing role with ID ${roleId}`);
+            // Show the edit modal
+            $('#editRoleModal').modal('show');
+        }
+
+        function deleteRole(roleId) {
+            // Implement your delete logic here
+            const apiUrl = `http://localhost:8080/api/sales/inventory/remove/${roleId}`;
+
+            fetch(apiUrl, {
+                method: 'DELETE',
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Error deleting role');
+                }
+                console.log(`Role with ID ${id} deleted successfully`);
+
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+            window.location.reload();
+        }
+
+        function saveEditedRole() {
+            // Implement your save logic here
+            // Retrieve data from the modal fields (roleName, roleDescription)
+            // Update the role data
+            // Close the modal
+            $('#editRoleModal').modal('hide');
+        }
+
+    function addNewRole() {
+    const roleNameInput = document.getElementById('newRoleName');
+    const roleDescriptionInput = document.getElementById('newRoleDescription');
+
+    const roleName = roleNameInput.value;
+    const roleDescription = roleDescriptionInput.value;
+
+    // Example: Send an API request to add the new role
+    const newRoleData = {
+        role_name: roleName,
+        role_description: roleDescription
+    };
+
+    // Replace with your actual API endpoint and logic
+    fetch('http://localhost:8080/api/sales/inventory/add', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newRoleData)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Error adding role');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('New role added:', data);
+        // Close the modal
+        $('#addRoleModal').modal('hide');
+        window.location.reload();
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
+    </script>
 </body>
 </html>

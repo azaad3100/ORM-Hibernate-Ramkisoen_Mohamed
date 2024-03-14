@@ -4,6 +4,15 @@ public class RoleDto {
 
     private Long role_id;
     private String role_name;
+    private String role_description;
+
+    public String getRole_description() {
+        return role_description;
+    }
+
+    public void setRole_description(String role_description) {
+        this.role_description = role_description;
+    }
 
     public Long getRole_id() {
         return role_id;

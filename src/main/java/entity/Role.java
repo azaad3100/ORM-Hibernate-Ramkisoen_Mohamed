@@ -11,6 +11,17 @@ public class Role {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long role_id;
     private String role_name;
+
+    public String getRole_description() {
+        return role_description;
+    }
+
+    public void setRole_description(String role_description) {
+        this.role_description = role_description;
+    }
+
+    @Column(nullable = true)
+    private String role_description;
     @OneToMany(mappedBy = "role_id")
     private Set<Employee> employees;
 
