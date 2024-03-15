@@ -30,15 +30,15 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="addRoleModalLabel">Add Role</h5>
+                <h5 class="modal-title" id="addRoleModalLabel">Edit Role</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"></span>
                 </button>
             </div>
             <div class="modal-body">
                 <!-- Add your form fields for adding a new role here -->
-                <label for="newRoleName">Role ID:</label>
-                <input type="text" id="roleidField" class="form-control" readonly>
+                <label for="newroleID">Role ID:</label>
+                <input type="text" id="roleIDField" class="form-control"readonly>
                 <label for="newRoleName">Role Name:</label>
                 <input type="text" id="newRoleName1" class="form-control">
                 <label for="newRoleDescription">Role Description:</label>
@@ -108,7 +108,7 @@
         function editRole(roleId, rolename,roleDescription) {
             // Implement your edit logic here
             console.log(`Editing role with ID ${roleId}, Name: ${rolename}, Description: ${roleDescription}`);
-            document.getElementById('roleidField').value = roleId;
+            document.getElementById('roleIDField').value = roleId;
             document.getElementById('newRoleName1').value = rolename;
             document.getElementById('newRoleDescription1').value = roleDescription;
             $('#editRoleModal').modal('show');
@@ -125,49 +125,43 @@
                 if (!response.ok) {
                     throw new Error('Error deleting role');
                 }
-                console.log(`Role with ID ${id} deleted successfully`);
-
+                console.log(`Role with ID ${id} deleted successfully`); 
+                
             })
             .catch(error => {
                 console.error('Error:', error);
             });
+
             window.location.reload();
         }
 
-        async function saveEditedRole() {
-            const roleId = document.getElementById('roleidField').value;
-            const roleName = document.getElementById('newRoleName1').value;
-            const roleDescription = document.getElementById('newRoleDescription1').value;
+         function saveEditedRole() {
 
-            const apiUrl = 'http://localhost:8080/api/sales/inventory/update';
+            const apiUrl = 'http://localhost:8080/api/sales/inventory/update'; // Replace with your API endpoint
 
-            try {
-                const response = await fetch(apiUrl, {
-                    method: 'PUT', // Use the appropriate HTTP method (e.g., PUT, POST, etc.)
-                    headers: {
-                        'Content-Type': 'application/json', // Set the content type
-                    },
-                    body: JSON.stringify({
-                        role_id: roleId,
-                        role_name: roleName,
-                        role_description: roleDescription,
-                    }),
-                });
+            const data = {
+                role_id: document.getElementById('roleIDField').value,
+                role_name: document.getElementById('newRoleName1').value,
+                role_description: document.getElementById('newRoleDescription1').value
+            };
 
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-
-                const updatedData = await response.json();
-                console.log('Role updated successfully:', updatedData);
-                
-            } catch (error) {
-                console.error('Error updating role:', error);
-                // Handle errors (e.g., display an error message)
-            }
-            $('#editRoleModal').modal('hide');
+            fetch(apiUrl, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(result => {
+                document.getElementById('response').innerHTML = `Data updated successfully! Updated timestamp: ${result.updatedAt}`;
+            })
+            
+            .catch(error => {
+                document.getElementById('response').innerHTML = `Error updating data: ${error.message}`;
+            });
             window.location.reload();
-            alert('Role updated successfully!');
+            $('#editRoleModal').modal('hide');
         }
 
     function addNewRole() {
