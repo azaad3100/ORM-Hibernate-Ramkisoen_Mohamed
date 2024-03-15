@@ -27,7 +27,29 @@
 
     <!-- Edit Role Modal -->
     <div class="modal fade" id="editRoleModal" tabindex="-1" role="dialog" aria-labelledby="editRoleModalLabel" aria-hidden="true">
-        <!-- ... (existing modal content) ... -->
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addRoleModalLabel">Add Role</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Add your form fields for adding a new role here -->
+                <label for="newRoleName">Role ID:</label>
+                <input type="text" id="roleidField" class="form-control" readonly>
+                <label for="newRoleName">Role Name:</label>
+                <input type="text" id="newRoleName1" class="form-control">
+                <label for="newRoleDescription">Role Description:</label>
+                <textarea id="newRoleDescription1" class="form-control"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="saveEditedRole()">Save</button>
+            </div>
+        </div>
+    </div>
     </div>
 
     <!-- Add Role Modal -->
@@ -35,7 +57,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="addRoleModalLabel">Add Role</h5>
+                    <h5 class="modal-title" id="addRoleModalLabel2">Add Role</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true"></span>
                     </button>
@@ -71,7 +93,7 @@
                         <td>${role.role_name}</td>
                         <td>${role.role_description}</td>
                         <td>
-                            <button class="btn btn-primary btn-sm" onclick="editRole(${role.role_id})">Edit</button>
+                            <button class="btn btn-primary btn-sm" onclick="editRole(${role.role_id}, '${role.role_name}', '${role.role_description}')">Edit</button>
                             <button class="btn btn-danger btn-sm" onclick="deleteRole(${role.role_id})">Delete</button>
                         </td>
                     `;
@@ -83,10 +105,12 @@
 
 
         // Example edit and delete functions (replace with your actual logic)
-        function editRole(roleId) {
+        function editRole(roleId, rolename,roleDescription) {
             // Implement your edit logic here
-            console.log(`Editing role with ID ${roleId}`);
-            // Show the edit modal
+            console.log(`Editing role with ID ${roleId}, Name: ${rolename}, Description: ${roleDescription}`);
+            document.getElementById('roleidField').value = roleId;
+            document.getElementById('newRoleName1').value = rolename;
+            document.getElementById('newRoleDescription1').value = roleDescription;
             $('#editRoleModal').modal('show');
         }
 
@@ -110,12 +134,40 @@
             window.location.reload();
         }
 
-        function saveEditedRole() {
-            // Implement your save logic here
-            // Retrieve data from the modal fields (roleName, roleDescription)
-            // Update the role data
-            // Close the modal
+        async function saveEditedRole() {
+            const roleId = document.getElementById('roleidField').value;
+            const roleName = document.getElementById('newRoleName1').value;
+            const roleDescription = document.getElementById('newRoleDescription1').value;
+
+            const apiUrl = 'http://localhost:8080/api/sales/inventory/update';
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'PUT', // Use the appropriate HTTP method (e.g., PUT, POST, etc.)
+                    headers: {
+                        'Content-Type': 'application/json', // Set the content type
+                    },
+                    body: JSON.stringify({
+                        role_id: roleId,
+                        role_name: roleName,
+                        role_description: roleDescription,
+                    }),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const updatedData = await response.json();
+                console.log('Role updated successfully:', updatedData);
+                
+            } catch (error) {
+                console.error('Error updating role:', error);
+                // Handle errors (e.g., display an error message)
+            }
             $('#editRoleModal').modal('hide');
+            window.location.reload();
+            alert('Role updated successfully!');
         }
 
     function addNewRole() {
