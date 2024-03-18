@@ -6,6 +6,8 @@
     <title>Role Data</title>
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 <body>
 
@@ -15,8 +17,9 @@
             <p class="lead">Here you can preform CRUD functions.</p>
             <!--                <p>Bootstrap v5.1.3</p>-->
         </div>
-    <div class="container mt-5">
         <button class="btn btn-success" data-toggle="modal" data-target="#addRoleModal">Add New Role</button>
+
+    <div class="container mt-5">
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -132,12 +135,11 @@
                     throw new Error('Error deleting role');
                 }
                 console.log(`Role with ID ${id} deleted successfully`); 
-                
+                window.location.reload();
             })
             .catch(error => {
                 console.error('Error:', error);
             });
-
             window.location.reload();
         }
 
